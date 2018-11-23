@@ -57,17 +57,6 @@ namespace RegistrationApplication
             {
                 try
                 {
-                    //if (textBoxBirthDate == null && textBoxCity.Text == null && textBoxCountry.Text == null && textBoxPostalCode.Text == null && textBoxStreet.Text == null && textBoxHouseNr.Text == null)
-                    //{
-                    //    string firstName = textBoxFirstName.Text;
-                    //    string lastName = textBoxLastName.Text;
-                    //    string email = textBoxEmail.Text;
-                    //    int phoneNr = Convert.ToInt32(textBoxPhoneNr.Text);
-
-                    //    myParticipant = new Participant(firstName, lastName, email, phoneNr);
-                    //}
-                    //else
-                    //{
                     string firstName = textBoxFirstName.Text;
                     string lastName = textBoxLastName.Text;
                     string email = textBoxEmail.Text;
@@ -81,7 +70,6 @@ namespace RegistrationApplication
                     string date = birthDate.ToString("yyyy-MM-dd hh:mm:ss");
 
                     myParticipant2 = new Participant(firstName, lastName, email, phoneNr, streetName, houseNr, postalCode, city, country, date);
-                    //}
 
                     if (accinfoForm != null)
                     {
